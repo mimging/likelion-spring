@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: likelion-Spring
+  datasource:
+    url: jdbc:mysql://likelion-database.cnuo22iq2zpm.ap-northeast-2.rds.amazonaws.com
+    username: likelion
+    password: 20030409
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+  endpoint:
+    health:
+      show-details: always
